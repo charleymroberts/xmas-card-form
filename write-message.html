@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Design your card</title>
+</head>
+<body>
+<main id="design">
+
+  <strong>Preview message:</strong>
+  <!--Fields to display the message to the sender as they are typing it-->
+
+  <div id="card" class="col">
+    <p>Dear <span id="card-r" data-placeholder="{Recipient}">{Recipient}</span></p>
+    <p id="card-g" data-placeholder="{Greeting goes here}">{Greeting goes here}</p>
+    <p>From <span id="card-s" data-placeholder="{Sender}">{Sender}</span></p>
+  </div>
+
+  <strong>Enter your message:</strong>
+  <!--Form for the sender to enter their message. You can just use the 'greeting'
+  field if we don't want separate 'to' and 'from' fields.
+
+  The main thing is to add the "name" tags so we can access the text content.-->
+
+  <form id="cardForm" class="col">
+    <p><input name="r" type="text" required placeholder="Recipient's name"></p>
+    <p><textarea name="g" required placeholder="Enter your greeting here"></textarea></p>
+    <p><input name="s" type="text" required placeholder="Your name"></p>
+
+    <!--Don't add "name" tags to these fields, so that they don't end up as
+    part of the generated URL-->
+    <p><button type="submit">Share this card</button></p>
+    <p><strong>Copy and share this link:</strong></p>
+    <p><input id="cardUrl" readonly type="text"></p>
+  </form>
+
+</main>
+<!--Haven't finished this file yet but it will need to be included here-->
+<script src="assets/js/script.js"></script>
+</body>
+</html>
