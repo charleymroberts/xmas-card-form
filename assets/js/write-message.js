@@ -15,7 +15,8 @@ cardForm.addEventListener("submit", function(e) {
     e.preventDefault();
     // base URL to display (rather than design) this card
     // replace this URL with the location of the webpage displaying the graphic
-    const cardUrl = new URL("receive-message.html", window.location.href);
+    // const cardUrl = new URL("snowman.html", window.location.href);
+    const cardUrl = new URL(document.getElementById("select-background").value, window.location.href);
     // turn the form fields into a query string
     const values = new URLSearchParams(new FormData(cardForm));
 

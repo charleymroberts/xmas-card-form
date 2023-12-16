@@ -1,0 +1,27 @@
+#house-background {
+    background-image: url("../images/xmas-house.gif");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+#snowman-background {
+    background-image: url("../images/snowman.gif");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+#house-background #message-text {
+    text-align: center;
+    font-size: x-large;
+    position: relative;
+    top: 5em;
+}
+
+#snowman-background #message-text {
+    text-align: center;
+    font-size: x-large;
+    position: relative;
+    top: 1em;
+}
